@@ -1,29 +1,28 @@
 {
-  "name": "viralcut-ai---srt-to-video",
-  "private": true,
-  "version": "0.0.0",
+  "name": "viralcut-ai",
   "type": "module",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "@astrojs/node": "^9.5.2",
+    "@astrojs/react": "^4.2.0",
     "@google/genai": "^1.35.0",
-    "lucide-react": "0.344.0",
-    "@supabase/supabase-js": "2.39.0",
-    "react-helmet-async": "2.0.4",
-    "vite": "^7.3.1",
-    "@vitejs/plugin-react": "^5.1.2",
-    "vite-plugin-prerender": "^1.0.8",
-    "path": "^0.12.7"
+    "@supabase/supabase-js": "^2.39.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "astro": "^5.17.1",
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.4",
+    "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "typescript": "~5.8.2"
   }
 }
