@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import App from '../App';
+import { LanguageProvider } from '../../contexts/LanguageContext';
+import { AuthProvider } from '../../contexts/AuthContext';
+
+// Client-side only for the app
+export const prerender = false;
+---
+
+<Layout title="ViralCut AI - Editor">
+  <App client:only="react" />
+</Layout>
