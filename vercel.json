@@ -1,5 +1,13 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "astro"
+  "outputDirectory": "dist/client",
+  "framework": "astro",
+  "functions": {
+    "dist/server/**/*.mjs": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/dist/server/entry.mjs" }
+  ]
 }
